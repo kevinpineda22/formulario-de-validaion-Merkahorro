@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stlyle.css">
-    
-    <title>Formulario de validacion</title>
+    <link rel="stylesheet" href="/stlyle.css"">
+    <title>Formulario de Validación</title>
 </head>
 <body>
     <header>
-        <h1>formulario validacion Merkahorro</h1>
-
+        <h1>Formulario de Validación Merkahorro</h1>
     </header>
     <main>
-        
-            
-
-
+        <form id="form" class="form" action="https://formspree.io/f/myzggnbb"
+        method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <button type="submit">Enviar</button>
         </form>
-
     </main>
     <footer>
-        <p>kevin pineda</p>
-
+        <p>&copy; 2024 Merkahorro. Todos los derechos reservados.</p>
     </footer>
-    
-
-
-
     <script src="/script.js"></script>
 </body>
 </html>
