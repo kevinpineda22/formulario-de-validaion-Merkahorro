@@ -70,3 +70,36 @@ footer {
     background-color: #f4f4f4;
     margin-top: 2rem;
 }
+.video-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px; /* Espacio alrededor del video */
+    box-sizing: border-box;
+    text-align: center; /* Centra el título */
+    top: 9rem;
+  }
+  
+  .video-container h1 {
+    color: #210D65;
+    margin-bottom: 20px; /* Espacio debajo del título */
+  }
+  
+  .video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Query para mejorar la responsividad en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .video-container {
+      padding: 15px;
+    }
+    .video-container h1 {
+      font-size: 24px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+  }
